@@ -408,7 +408,7 @@ ol {
 .logowhite {
     display: inline-block;
     max-width: 100%;
-    height: auto;
+    max-height: 40px;
 }
 .logodark {
     display: none;
