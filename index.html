@@ -682,6 +682,18 @@
   </div>
 </section>
 
+<section class="cta">
+  <canvas id="netcanvas2"></canvas>
+  <div class="cta-inner">
+    <p class="eyebrow on-dark" style="justify-content:center;">Let's talk</p>
+    <h2>See for yourself</h2>
+    <p>Every company and academic group gets a free trial period to explore what Allchemy can do. Test it yourself — no curated examples, no script.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn btn-primary">Request a demo</a>
+    </div>
+  </div>
+</section>
+
 <section class="section tight" id="publications">
   <div class="mol-bg"><canvas id="net-pubs"></canvas></div>
   <div class="wrap">
@@ -724,21 +736,17 @@
         <div class="pub-text"><div class="pub-title">Sustainable production of chemicals by algorithm-assisted (bio)synthesis</div><div class="pub-auth">Grzybowski B. A.; Żądło-Dobrowolska A.; Onishchenko N.; Larsen E. S. — 2025</div></div>
         <span class="pub-badge b-nrb">Nat. Rev. Bioeng.</span>
       </a>
-      <a href="https://doi.org/10.1038/s41567-025-02825-9" target="_blank" rel="noopener" class="pub">
-        <div class="pub-text"><div class="pub-title">Enzymes as viscoelastic catalytic machines</div><div class="pub-auth">Weinreb E.; McBride J. M.; Siek M.; Rougemont J.; … Grzybowski B. A.; … Tlusty T. — 2025</div></div>
-        <span class="pub-badge b-np">Nat. Phys.</span>
-      </a>
       <a href="https://doi.org/10.1021/jacs.4c00338" target="_blank" rel="noopener" class="pub">
         <div class="pub-text"><div class="pub-title">Artificial intelligence for retrosynthetic planning needs both data and expert knowledge</div><div class="pub-auth">Strieth-Kalthoff F.; Szymkuć S.; Molga K.; Aspuru-Guzik A.; Glorius F.; Grzybowski B. A. — 2024</div></div>
         <span class="pub-badge b-jacs">JACS</span>
       </a>
-    </div>
-
-    <div class="pub-page" data-page="2">
       <a href="https://www.nature.com/articles/s41467-024-54611-5" target="_blank" rel="noopener" class="pub">
         <div class="pub-text"><div class="pub-title">Systematic, computational discovery of multicomponent and one-pot reactions</div><div class="pub-auth">Roszak R.; Gadina L.; Wołos A.; Makkawi A.; Mikulak-Klucznik B.; … Gryko D. T.; Grzybowski B. A. — 2024</div></div>
         <span class="pub-badge b-nc">Nat. Commun.</span>
       </a>
+    </div>
+
+    <div class="pub-page" data-page="2">
       <a href="https://www.nature.com/articles/s41467-024-54550-1" target="_blank" rel="noopener" class="pub">
         <div class="pub-text"><div class="pub-title">Estimation of multicomponent reactions' yields from networks of mechanistic steps</div><div class="pub-auth">Szymkuć S.; Wołos A.; Roszak R.; Grzybowski B. A. — 2024</div></div>
         <span class="pub-badge b-nc">Nat. Commun.</span>
@@ -775,13 +783,13 @@
         <div class="pub-text"><div class="pub-title">Synthetic connectivity, emergence, and self-regeneration in the network of prebiotic chemistry</div><div class="pub-auth">Wołos A.; Roszak R.; Żądło-Dobrowolska A.; Beker W.; Mikulak-Klucznik B.; … Szymkuć S.; Grzybowski B. A. — 2020</div></div>
         <span class="pub-badge b-sci">Science</span>
       </a>
-    </div>
-
-    <div class="pub-page" data-page="3">
       <a href="https://www.nature.com/articles/s42256-020-0209-y" target="_blank" rel="noopener" class="pub">
         <div class="pub-text"><div class="pub-title">Minimal-uncertainty prediction of general drug-likeness based on Bayesian neural networks</div><div class="pub-auth">Beker W.; Wołos A.; Szymkuć S.; Grzybowski B. A. — 2020</div></div>
         <span class="pub-badge b-nmi">Nat. Mach. Intell.</span>
       </a>
+    </div>
+
+    <div class="pub-page" data-page="3">
       <a href="https://pubs.acs.org/doi/abs/10.1021/jacs.9b05895" target="_blank" rel="noopener" class="pub">
         <div class="pub-text"><div class="pub-title">Rapid and accurate prediction of pKa values of C–H acids using graph convolutional neural networks</div><div class="pub-auth">Roszak R.; Beker W.; Molga K.; Grzybowski B. A. — 2019</div></div>
         <span class="pub-badge b-jacs">JACS</span>
@@ -830,28 +838,15 @@
           <div class="ac-msg" id="acMsg" role="status" aria-live="polite"></div>
           <p class="ac-note">We verify the domain has a real mail server, then email a 15-minute download link to that address — we never show it on this page. No account or payment required.</p>
         </form>
-        <iframe name="notifyFrame" style="display:none" aria-hidden="true"></iframe>
+        <iframe name="notifyFrame" id="notifyFrame" title="Sending your download link" style="display:none; width:100%; height:0; border:0; border-radius:8px; margin-top:12px; transition:height .2s ease;"></iframe>
         <form id="absynthNotifyForm" action="https://formsubmit.co/info@allchemy.net" method="POST" target="notifyFrame" style="display:none">
           <input type="hidden" name="_subject" value="AbSynth Collection — download link requested">
-          <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="email" id="notifyEmailField" value="">
           <input type="hidden" name="_autoresponse" id="notifyAutoresponseField" value="">
           <input type="hidden" name="download_link" id="notifyLinkField" value="">
         </form>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <canvas id="netcanvas2"></canvas>
-  <div class="cta-inner">
-    <p class="eyebrow on-dark" style="justify-content:center;">Let's talk</p>
-    <h2>See for yourself</h2>
-    <p>Every company and academic group gets a free trial period to explore what Allchemy can do. Test it yourself — no curated examples, no script.</p>
-    <div class="cta-buttons">
-      <a href="#contact" class="btn btn-primary">Request a demo</a>
     </div>
   </div>
 </section>
@@ -1204,15 +1199,25 @@
       // feature sends a real email to the address the visitor typed. If it's
       // not a real, reachable inbox, they simply never receive the link — a
       // far stronger guarantee than any client-side check. This is a genuine
-      // form POST (not fetch), submitted into a hidden iframe, so it isn't
-      // subject to CORS and never navigates the visible page.
+      // form POST (not fetch), submitted into an iframe, so it isn't subject
+      // to CORS. Note: FormSubmit's autoresponse feature explicitly requires
+      // reCAPTCHA to stay enabled (it silently fails if _captcha=false), so
+      // we can't disable it here — which means a challenge could occasionally
+      // appear. We briefly reveal the iframe after submitting so that if one
+      // does show up, it's actually visible and completable, not silently lost.
       var notifyForm = document.getElementById('absynthNotifyForm');
+      var notifyFrame = document.getElementById('notifyFrame');
       if(notifyForm){
         document.getElementById('notifyEmailField').value = val;
         document.getElementById('notifyLinkField').value = link;
         document.getElementById('notifyAutoresponseField').value =
           'Here is your AbSynth Collection sample download link. It expires 15 minutes from now:\n\n' + link +
           '\n\nIf you did not request this, you can ignore this email.';
+        if(notifyFrame){
+          notifyFrame.style.display = 'block';
+          notifyFrame.style.height = '420px';
+          notifyFrame.style.border = '1px solid var(--line)';
+        }
         notifyForm.submit();
       }
 
@@ -1220,7 +1225,7 @@
         submitBtn.disabled = false;
         submitBtn.textContent = originalLabel;
         msg.className = 'ac-msg show ok';
-        msg.innerHTML = 'If <b>' + val + '</b> is a reachable inbox, a 15-minute download link is on its way there now. Nothing arrives if the address doesn\'t exist — that\'s the verification. Check spam if you don\'t see it shortly.';
+        msg.innerHTML = 'If <b>' + val + '</b> is a reachable inbox, a 15-minute download link is on its way there now. Nothing arrives if the address doesn\'t exist — that\'s the verification. Check spam if you don\'t see it shortly. (If a verification box appeared above, please complete it.)';
         input.value = '';
       }, 600);
     });
