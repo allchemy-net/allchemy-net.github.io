@@ -238,6 +238,12 @@
   .figure-cap b{ color:var(--navy); font-weight:700; }
 
   /* ---------- Hybrid split section ---------- */
+  .hybrid-frame{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:48px;
+  }
   .hybrid-grid{
     display:grid;
     grid-template-columns:0.95fr 1.05fr;
@@ -280,6 +286,9 @@
 
   @media (max-width:920px){
     .hybrid-grid{ grid-template-columns:1fr; }
+  }
+  @media (max-width:640px){
+    .hybrid-frame{ padding:28px 22px; border-radius:16px; }
   }
 
   /* ---------- Platform detail blocks ---------- */
@@ -545,6 +554,7 @@
 <section class="section" id="hybrid">
   <div class="mol-bg"><canvas id="net-hybrid"></canvas></div>
   <div class="wrap">
+    <div class="hybrid-frame">
     <div class="hybrid-grid">
       <div class="hybrid-copy">
         <p class="eyebrow">Not another literature-trained model</p>
@@ -592,6 +602,7 @@
           <span><b>Fig. 1b</b> — Automated retrosynthesis: a complete route tree, generated end to end</span>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
@@ -1325,7 +1336,7 @@
 
     // Fill in the dynamic hidden fields right before the native form POST fires.
     document.getElementById('cSubjectField').value = 'Allchemy inquiry' + (type ? ' — ' + type : '') + ' — ' + name;
-    document.getElementById('cNextField').value = window.location.origin + window.location.pathname + '?sent=true#contact';
+    document.getElementById('cNextField').value = window.location.origin + window.location.pathname + '?sent=true';
 
     cMsg.classList.add('ok');
     cMsg.innerHTML = 'Sending your message…';
@@ -1338,6 +1349,10 @@
   (function(){
     var params = new URLSearchParams(window.location.search);
     if(params.get('sent') === 'true' && cMsg){
+      var contactSection = document.getElementById('contact');
+      if(contactSection){
+        contactSection.scrollIntoView({behavior:'auto', block:'start'});
+      }
       cMsg.className = 'contact-msg show ok';
       cMsg.innerHTML = 'Message sent — thanks. We\'ll get back to you shortly.';
       history.replaceState(null, '', window.location.pathname + '#contact');
